@@ -1,0 +1,93 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: rgb(204, 195, 235);
+}
+
+#screen {
+    display: block;
+}
+
+#speedLabel {
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom: 1em;
+    margin-right: .4em;
+}
+
+#speed {
+    -webkit-appearance: none;
+    background-color: rgb(156, 165, 217);
+}
+
+#speed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#speed::-webkit-slider-thumb:hover {
+    background-color: rgb(196, 205, 255);
+    border-color: black;
+}
+
+#speed::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+#speed::-moz-range-thumb:hover {
+    background-color: rgb(196, 205, 255);
+    border-color: black;
+}
+
+.projectHeader {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(60, 60, 60);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(174, 165, 205);;
+}
+
+* {
+    scrollbar-width: 15px;
+    scrollbar-color: rgb(60, 60, 60) rgb(174, 165, 205);
+}
+
+.button {
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-bottom: 1em;
+    background-color: rgb(156, 165, 217);
+    margin-right: .4em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#start {
+    width: 80px;
+}
+
+.button:hover {
+    background-color: rgb(196, 205, 255);
+    
+}
+
+.button:active {
+    background-color: rgb(216, 225, 255);
+}

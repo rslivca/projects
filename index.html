@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <center>
+        <h1 class="projectHeader">Conway's Game of Life</h2>
+        <button class="button" id="start">Start</button>
+        <button class="button" id="randomize">Randomize</button>
+        <button class="button" id="reset">Reset</button>
+        <label id="speedLabel" for="speed">Speed</label>
+        <input type="range" id="speed" min="10" max="200" val="95" step="5">
+
+        <canvas id="screen" width="800" height="800"></canvas>
+
+        <h1 class="projectHeader">Computer Graphics Project</h2>
+        <video id="csc133Video" width="800" height="450" controls>
+            <source src="videos/133.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1 class="projectHeader">Flappy Bird</h2>
+        <video id="flappyVideo" width="800" height="450" controls>
+            <source src="videos/flappyBird.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1 class="projectHeader">Weather App</h2>
+        <video id="weatherVideo" width="800" height="450" controls>
+            <source src="videos/weather.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h1 class="projectHeader">Evil Hangman</h2>
+        <video id="weatherVideo" width="800" height="450" controls>
+            <source src="videos/hangman.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </center>
+
+    <script src="main.js"></script>
+</body>
+</html>
