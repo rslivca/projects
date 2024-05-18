@@ -1,4 +1,11 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     font-family: "Helvetica", cursive, sans-serif;
     background: linear-gradient(to bottom, rgb(204, 195, 235), rgb(252, 223, 199));
 }
@@ -74,13 +81,16 @@ body {
     font-family: "Helvetica", cursive, sans-serif;
     margin-bottom: 1em;
     background-color: rgb(156, 165, 217);
-    margin-right: .4em;
+    color: black;
     border: 1px solid transparent;
     border-radius: 5px;
-}
-
-#start {
-    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s, border-color 0.3s;
+    min-width: 90px;
+    width: auto;
 }
 
 .button:hover {
@@ -97,4 +107,8 @@ canvas {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.container {
+    text-align: center;
 }
