@@ -112,3 +112,23 @@ canvas {
 .container {
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .container {
+        transform: scale(0.5);
+    }
+    
+    body {
+        height: 310vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        transform: scale(0.4);
+    }
+    
+    body {
+        height: 250vh;
+    }
+}

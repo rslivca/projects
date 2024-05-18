@@ -16,8 +16,8 @@ const MOUSEOVER_PXL_COLOR = "rgb(196, 205, 255)";
 const MOUSEOVER_CLICKED_PXL_COLOR = "rgb(81, 81, 81)";
 
 // canvas.width / (squareSize + squaregap) needs to be a whole number
-const SQUARE_SIZE = 19;
-const SQUARE_GAP_SIZE = 1;
+let SQUARE_SIZE = 19;
+let SQUARE_GAP_SIZE = 1;
 const ROW_COUNT = screen.width / (SQUARE_SIZE + SQUARE_GAP_SIZE);
 const pixels = [];
 let cycles = 0;
@@ -50,8 +50,13 @@ function onClickEvent(event) {
         return;
     }
     const rect = screen.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    let mouseX = event.clientX - rect.left;
+    let mouseY = event.clientY - rect.top;
+    let multiplier = 800 / rect.width;
+    console.log(multiplier);
+    mouseX *= multiplier;
+    mouseY *= multiplier;
+
     let i = parseInt((mouseY / (SQUARE_SIZE + SQUARE_GAP_SIZE)))
     let j =  parseInt((mouseX / (SQUARE_SIZE + SQUARE_GAP_SIZE)));
 
@@ -72,8 +77,12 @@ function onMouseMove(event) {
         return;
     }
     const rect = screen.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    let mouseX = event.clientX - rect.left;
+    let mouseY = event.clientY - rect.top;
+    let multiplier = 800 / rect.width;
+    console.log(multiplier);
+    mouseX *= multiplier;
+    mouseY *= multiplier;
     let i = parseInt((mouseY / (SQUARE_SIZE + SQUARE_GAP_SIZE)))
     let j =  parseInt((mouseX / (SQUARE_SIZE + SQUARE_GAP_SIZE)));
 
