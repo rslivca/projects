@@ -1,6 +1,6 @@
 body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    background-color: rgb(204, 195, 235);
+    font-family: "Helvetica", cursive, sans-serif;
+    background: linear-gradient(to bottom, rgb(204, 195, 235), rgb(252, 223, 199));
 }
 
 #screen {
@@ -9,7 +9,7 @@ body {
 
 #speedLabel {
     font-size: 24px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Helvetica", cursive, sans-serif;
     margin-bottom: 1em;
     margin-right: .4em;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(174, 165, 205);;
+    background-color: rgb(174, 165, 205);
 }
 
 * {
@@ -71,7 +71,7 @@ body {
 
 .button {
     font-size: 24px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Helvetica", cursive, sans-serif;
     margin-bottom: 1em;
     background-color: rgb(156, 165, 217);
     margin-right: .4em;
@@ -90,4 +90,11 @@ body {
 
 .button:active {
     background-color: rgb(216, 225, 255);
+}
+
+canvas {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
